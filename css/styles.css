@@ -524,6 +524,7 @@ width: 264px;
 }
 .image-list{
     gap: 24px;
+    flex-wrap: wrap;
 }
 .title-section{
     font-weight: 700;
@@ -536,7 +537,11 @@ color:var(--dark-txt-cl);
 margin-bottom: 72px;
 }
 /* section 4 */
-
+.flex-elements{
+    display: flex;
+    
+    flex-wrap: wrap;
+}
 .section-four{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -602,6 +607,7 @@ margin-bottom: 8px;
 .brands-list{
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 .link-h{
     display: flex;
