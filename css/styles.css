@@ -24,10 +24,6 @@ h3,
 h4,
 h5,
 h6,
-/* BreakPoints */
---mobile-screen:480px;
---tablet-screen:768px;
---destktop-screen:1440px;
 p {
  margin: 0;   
 }
@@ -489,11 +485,10 @@ color: var(--grey-txt-cl);
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.flex-list-a{
-    
-}
 .list-section-one{
 gap: 24px;
+display: flex;
+flex-wrap: wrap;
 }
 .advantages{
     font-weight: 500;
