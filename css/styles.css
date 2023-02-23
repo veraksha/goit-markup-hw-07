@@ -24,6 +24,10 @@ h3,
 h4,
 h5,
 h6,
+/* BreakPoints */
+--mobile-screen:480px;
+--tablet-screen:768px;
+--destktop-screen:1440px;
 p {
  margin: 0;   
 }
@@ -40,11 +44,30 @@ body{
     color: var(--main-txt-cl);
 }
 .container{
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* Phone Screen */
+    min-width: 320px;
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
+
+    outline: 2px solid #31D0AA ;
+    outline-offset: -2px;
+}
+/* Tablet Screen */
+@media screen and (min-width:768px) {
+    .container{
+        max-width: 736px;
+        
+    }  
+}
+/* Desktop Screen */
+@media screen and (min-width:1158px) {
+    .container{
+        max-width: 1200px;
+        
+    }  
 }
 .section{
     padding-top: 120px;
