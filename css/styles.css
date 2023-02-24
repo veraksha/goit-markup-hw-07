@@ -17,7 +17,7 @@
     --success-10:rgba(49, 208, 170, 0.10);
 
     --items:1;
-    --items:2;
+    --indent:30px;
 }
 h1,
 h2,
@@ -786,8 +786,7 @@ margin-bottom: 24px;
         flex-wrap: wrap;
         gap: 90px;
         --items:2;
-        --indent:24px;
-        flex-basis: calc((100%-(var(--items)-1)*var(--indent))/var(--items));
+       
     }
 }
 @media screen and (min-width:1200px) {
@@ -826,6 +825,7 @@ background-color: var(--button-cl);
     display: flex;
     gap: 24px;
     margin-left: 16px;
+    margin-right: 16px;
 }
 .banner-grey{
     background-color: var(--light-txt-cl);
@@ -855,6 +855,8 @@ margin-bottom: 8px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     margin-top: 48px;
+    flex-basis: calc((100%-(var(--items)-1)*var(--indent))/var(--items));
+    --items:2;
 }
 /* section 5 */
 
