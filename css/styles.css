@@ -16,7 +16,8 @@
     --success-50:rgba(49, 208, 170, 0.50);
     --success-10:rgba(49, 208, 170, 0.10);
 
-
+    --items:1;
+    --items:2;
 }
 h1,
 h2,
@@ -35,6 +36,7 @@ ul{
 img{
     display: block;
     width: 100%;
+    height: auto;
 }
 body{
     font-family:"Roboto", sans-serif;
@@ -343,25 +345,58 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-     url(../images/people-office\ 1.jpg);
+    url(../images/Dark-bg_mob@1x.png);
     background-repeat: no-repeat;
     background-size:cover;
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/Dark-bg_mob@2x.png);
+    }
+  }
+@media screen and (min-width:481px){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+     url(../images/Dark-bg_tab@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/Dark-bg_tab@2x.png);
+    }
+  }
+}
+@media screen and (min-width:769px){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+     url(../images/people-office\ 1_desk@1x.png);
+    }
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .hero{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office\ 1_desk@2x.png);
+    }
+  }
+}
 @media screen and (min-width:1200px) {
     .hero{
-        background-color: var(--dark-txt-cl);
-        text-align:center;
         padding-top: 188px;
-        padding-bottom: 188px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        max-width: 1440px;
-        margin-right: auto;
-        margin-left: auto;
+        padding-bottom: 188px;       
     }
 }
 .modal-pr{
@@ -750,6 +785,9 @@ margin-bottom: 24px;
         display: flex;
         flex-wrap: wrap;
         gap: 90px;
+        --items:2;
+        --indent:24px;
+        flex-basis: calc((100%-(var(--items)-1)*var(--indent))/var(--items));
     }
 }
 @media screen and (min-width:1200px) {
@@ -1315,6 +1353,7 @@ letter-spacing: 0.02em;
     background-color:var(--white-txt-cl);
     z-index: 999;
     overflow: hidden;
+    overflow-y: scroll;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
   }
