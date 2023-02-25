@@ -44,7 +44,7 @@ body{
 }
 .container{
     /* Phone Screen */
-    min-width: 320px;
+    width: 100%;
     max-width: 428px;
     padding-left: 15px;
     padding-right: 15px;
@@ -152,12 +152,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 @media screen and (min-width:768px) {  
     .container-pl{
         display: flex;
         flex-wrap: wrap;
-        justify-content: left;
+        width: 552px;
     }
 }
 .portfolio{
@@ -209,6 +210,12 @@ transition-property: color;
 transition-duration:  250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width:768px) {  
+    .contacts{
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
 .contacts:hover{
     color: var(--focused-txt-cl);
 }
@@ -248,7 +255,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    width: 330px;
+    /* width: 330px; */
     letter-spacing: 0.02em;
     color: var(--white-txt-cl);
     text-align: center;
@@ -714,7 +721,7 @@ text-align: center;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-width: 387px;
+
 }
 @media screen and (min-width:768px) {
     .description{
@@ -1349,8 +1356,8 @@ letter-spacing: 0.02em;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 32px;
     background-color:var(--white-txt-cl);
     z-index: 999;
@@ -1379,8 +1386,7 @@ letter-spacing: 0.02em;
     list-style: none;
     gap: 40px;
     display: flex;
-    flex-wrap: wrap;
-    width: 151px;
+    flex-direction: column;
   }
   
   .mobile-menu .link {
