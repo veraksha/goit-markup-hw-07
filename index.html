@@ -129,7 +129,7 @@
             </div>
             <!-- section 1/2 -->
            <section class="section-two">
-            <div class="container container-pl">
+            <div class="container">
                 <h2 class="visually-hidden">our advantages</h2>
                 <ul class="list-section-one">
                     <li class="flex-list-a">
@@ -178,7 +178,7 @@
            <!-- section 3 -->
             <section class="section-three">
                 <div class="container">
-                    <h2 class="title-section">What are we doing</h2>
+                    <h2 class="title-section-3">What are we doing</h2>
                     <ul class="flex-list image-list">
                         <li><img src="./images/img1.jpg" alt="statistics" width="360" height="300"></li>
                         <li><img src="./images/img2.jpg" alt="chatting" width="360" height="300"></li>
@@ -192,7 +192,30 @@
                     <h2 class="title-section">Our Team</h2>
                     <ul class="flex-elements">
                         <li class="member-list">
-                            <img srcset="
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset="./images/img_desk@1x-3.jpg 1x, ./images/img_desk@1x-3.jpg 2x"
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                        ./images/img_tab@1x-3.jpg 1x,
+                                        ./images/img_tab@2x-3.jpg 2x
+                                    "
+                                />
+                                <img
+                                    srcset="
+                                        ./images/img_mob@1x.jpg 1x,
+                                        ./images/img_mob@2x.jpg 2x
+                                    "
+                                    src="./images/img_mob@2x.jpg"
+                                    width="450"
+                                    alt="image"
+                                    loading="lazy"
+                                />
+                            </picture>
+                            <!-- <img srcset="
                             ./images/img_mob@1x.jpg 370x,
                             ./images/img_mob@2x.jpg 418x,
                             ./images/img_tab@1x-3.jpg 450x,
@@ -203,7 +226,7 @@
                              src="./images/member1.jpg" 
                              alt="member 1"
                              width="264"
-                             height="260">
+                             height="260"> -->
                             <div class="member">
                                 <h3 class="name">Mark Guerrero</h3>
                                 <p class="photo-description"> Product Designer</p>
@@ -241,7 +264,30 @@
                                 </div>
                             </div></li>
                         <li class="member-list">
-                            <img srcset="
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset="./images/img_desk@1x-2.jpg 1x, ./images/img_desk@1x-2.jpg 2x"
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                        ./images/img_tab@1x-2.jpg 1x,
+                                        ./images/img_tab@2x-2.jpg 2x
+                                    "
+                                />
+                                <img
+                                    srcset="
+                                        ./images/img_mob@1x-1.jpg 1x,
+                                        ./images/img_mob@2x-1.jpg 2x
+                                    "
+                                    src="./images/img_mob@2x.jpg"
+                                    width="450"
+                                    alt="image"
+                                    loading="lazy"
+                                />
+                            </picture>
+                            <!-- <img srcset="
                             ./images/img_mob@1x-1.jpg 370x,
                             ./images/img_mob@2x-1.jpg 418x,
                             ./images/img_tab@1x-2.jpg 450x,
@@ -252,7 +298,7 @@
                              src="./images/member2.jpg" 
                              alt="member 2" 
                              width="264" 
-                             height="260">
+                             height="260"> -->
                             <div class="member">
                                 <h3 class="name">Tom Ford</h3>
                                 <p class="photo-description"> Frontend Develope</p>
@@ -290,7 +336,31 @@
                                 </div>
                             </div></li>
                         <li class="member-list">
-                            <img srcset="
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset="./images/img_desk@1x-1.jpg 1x, 
+                                            ./images/img_desk@1x-1.jpg 2x"
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                        ./images/img_tab@1x-1.jpg 1x,
+                                        ./images/img_tab@2x-1.jpg 2x
+                                    "
+                                />
+                                <img
+                                    srcset="
+                                        ./images/img_mob@1x-2.jpg 1x,
+                                        ./images/img_mob@2x-2.jpg 2x
+                                    "
+                                    src="./images/img_mob@2x.jpg"
+                                    width="450"
+                                    alt="image"
+                                    loading="lazy"
+                                />
+                            </picture>
+                            <!-- <img srcset="
                             ./images/img_mob@1x-2.jpg 370x,
                             ./images/img_mob@2x-2.jpg 418x,
                             ./images/img_tab@1x-1.jpg 450x,
@@ -301,7 +371,7 @@
                             src="./images/member3.jpg"
                              alt="member 3"
                               width="264"
-                               height="260">
+                               height="260"> -->
                                 <div class="member">
                                     <h3 class="name">Camila Garcia</h3>
                                     <p class="photo-description"> Marketing</p>
@@ -339,7 +409,31 @@
                                     </div>
                                 </div></li>
                         <li class="member-list">
-                            <img srcset="
+                            <picture>
+                                <source
+                                    media="(min-width:1200px)"
+                                    srcset="./images/img_desk@1x.jpg 1x,
+                                            ./images/img_desk@1x.jpg 2x"
+                                />
+                                <source
+                                    media="(min-width:768px)"
+                                    srcset="
+                                        ./images/img_tab@1x.jpg 1x,
+                                        ./images/img_tab@2x.jpg 2x
+                                    "
+                                />
+                                <img
+                                    srcset="
+                                        ./images/img_mob@1x-3.jpg 1x,
+                                        ./images/img_mob@2x-3.jpg 2x
+                                    "
+                                    src="./images/img_mob@2x.jpg"
+                                    width="450"
+                                    alt="image"
+                                    loading="lazy"
+                                />
+                            </picture>
+                            <!-- <img srcset="
                             ./images/img_mob@1x-3.jpg 370x,
                             ./images/img_mob@2x-3.jpg 418x,
                             ./images/img_tab@1x.jpg 450x,
@@ -350,7 +444,7 @@
                              src="./images/member4.jpg"
                               alt="member 4"
                               width="264"
-                              height="260">
+                              height="260"> -->
                                 <div class="member">
                                     <h3 class="name">Daniel Wilson</h3>
                                     <p class="photo-description"> UI Designer</p>
